@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+/*****************************************************************************/
+/*************** Neutralising some of the default styles first ***************/
+/*****************************************************************************/
+html {
+    box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*****************************************************************************/
+/******************** Now applying the styles to the HTML ********************/
+/**************************** for narrow screens *****************************/
+/*****************************************************************************/
+
+header {
+  margin: 2.1074815vh 1em;
+}
+
+header > p {
+  color: #333;
+  font-family: Inconsolata, serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 75%;
+  margin: 6.7439409vh auto;
+}
+
+h1 {
+  color: #333;
+  font-family: "Space Mono", serif;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.5em;
+  margin: 6.3224446vh 1px 0 0.5em;
+  letter-spacing: -0.035em;
+}
+
+p#error-desc {
+  color: #4f4f4f;
+  font-size: 1.125em;
+  font-family: "Space Mono", serif;
+  line-height: 1.5em;
+  letter-spacing: -0.035em;
+  margin: 3.1612223vh 1.333em;
+}
+
+a#homepage-link {
+  font-family: "Space Mono", monospace;
+  text-align: center;
+  display: block;
+  width: 58%;
+  background-color: #333;
+  font-size: 0.875em;
+  padding: 1.7143em 0;
+  margin: 6.9546891vh 1.7143em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+footer {
+  color: #bdbdbd;
+  font-size: 0.875em;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  margin: 12.0126448vh 1.7143em 2.5289778vh 1.7143em;
+}
+
+span#username {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/*****************************************************************************/
+/****************************** for wide screens *****************************/
+/*****************************************************************************/
+
+@media screen and (min-width: 850px) {
+    header {
+      margin: 3.703703671vh 3.208em;
+    }
+    header > p {
+      margin: 0;
+      padding: 0;
+    }
+
+    div.grid-container {
+      margin: 18.51851848vh 8.2638888% 0 5.3472222%;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 43.3456591% 47.1061093%;
+      grid-gap: 0 9.5482315%;
+    }
+
+    img {
+      margin: 0;
+      padding: 0;
+      display: block;
+      width: 100%;
+    }
+
+    div.grid-item-text {
+      justify-self: stretch;
+    }
+    h1 {
+      font-size: 4em;
+      /* 64px */
+      margin: 0;
+      padding: 0;
+      line-height: 1.4808em;
+    }
+
+    p#error-desc {
+      padding: 0;
+      font-size: 1.5em;
+      line-height: 1.48em;
+      margin: 3.333333298vh 34.8122866% 0 0.1706484%;
+      line-height: 1.4808em;
+    }
+
+    a#homepage-link {
+      display: block;
+      width: 36.8600682%;
+      margin: 5.925925911vh 62.2866894% 0 0.8532423%;
+    }
+
+    footer {
+      font-size: 0.875em;
+      margin: 28.5185185vh auto 2.222222178vh auto;
+    }
+  }
